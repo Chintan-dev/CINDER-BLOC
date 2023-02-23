@@ -16,7 +16,7 @@ nav > a {
   position: relative;
 }
 nav > a > img {
-  width: 200px;
+  /* width: 200px; */
 }
 nav > a:hover {
   color: white;
@@ -24,16 +24,19 @@ nav > a:hover {
 
 nav > a > span {
   display: block;
-  border-bottom: 1px white solid transparent;
-  border-top: 1px white solid transparent;
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
   position: relative;
   z-index: 2;
 }
 nav > a:hover > span {
-  width: 200px;
+  border-bottom-color: white;
+  border-top-color: white;
+  /* width: 200px; */
 }
 
 nav > a > img {
+  /* width: 200px; */
   position: absolute;
   opacity: 0;
   transform: translate(-50%, -50%);
