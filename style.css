@@ -3,6 +3,8 @@ body {
 }
 nav {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   margin-top: 20vh;
   padding: clamp (1rem, 5vw.6rem);
@@ -14,9 +16,6 @@ nav > a {
   font-weight: 300;
   text-decoration: none;
   position: relative;
-}
-nav > a > img {
-  /* width: 200px; */
 }
 nav > a:hover {
   color: white;
@@ -36,10 +35,10 @@ nav > a:hover > span {
 }
 
 nav > a > img {
-  /* width: 200px; */
+  width: 200px;
   position: absolute;
   opacity: 0;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0.5);
   transition: transform 250ms, opacity 250ms;
   pointer-events: none;
   width: min(50vw, 800px);
@@ -47,5 +46,5 @@ nav > a > img {
 
 nav > a:hover > img {
   opacity: 1;
-  transform: translate(-50%, 50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
 }
