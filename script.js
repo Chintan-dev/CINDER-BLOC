@@ -5,9 +5,6 @@ for (const link of nav.getElementsByTagName("a")) {
       img = link.querySelector("img");
     img.style.left = `${e.clientX - rect.left}px`;
     img.style.top = `${e.clientY - rect.top}px`;
-    console.log(e.clientY);
-    console.log(rect.top);
-    console.log(img.style.top);
   };
 }
 
